@@ -6,18 +6,19 @@ using System.Web.Mvc;
 
 namespace FizzBuzz.Controllers
 {
-    public class HomeController : Controller
+    //Inherits from Controller class
+    public class HomeController : Controller 
     {
-        public ActionResult Index()
+        public ActionResult Index()  //ActionResult is the Return Type Index is the action
         {
             return View();
         }
-
+        //sets the layouts - returns the results of view method
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            return View(); 
         }
 
         public ActionResult Contact()

@@ -17,6 +17,8 @@ namespace FizzBuzz
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                //default goes to "controller" and "action" if not specified
+                //"new" is an anonymous class
             );
         }
     }
